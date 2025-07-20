@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="book-details">
+        <!-- Book Navigation Path -->
+        <div class="breadcrumbs">
+            <a href="/home">Home</a> / <a href="/books">Books</a> / <span>Aghatit</span>
+        </div>
+    
+        <div class="book-content">
+            <!-- Book Cover and Image -->
+            <div class="book-info">
+                <div class="book-cover">
+                    <img src="https://booksmandala.com/_next/image?url=https%3A%2F%2Fbooks.bizmandala.com%2Fmedia%2Fbooks%2F9789937712729%2Fimage.webp&w=1920&q=75" alt="Aghatit Book Cover">
+                </div>
+                
+                <!-- Book Details -->
+                <div class="book-description">
+                    <h1>Aghatit</h1>
+                    <p>by <strong>Ganesh Prasad Laath</strong></p>
+                    <div class="book-meta">
+                        <span class="book-genre">Genre: <a href="#">Nepali Literature</a></span><br><br>
+                        <span class="book-language">Language: Nepali</span>
+                    </div>
+                    <p class="book-price">Rs. 415</p>
+                    <p class="stock-status">Only 2 items left in stock!</p>
+                    <button>Add to cart</button>
+                </div>
+            </div>
+    
+            <!-- Add to Cart Card (Separate) -->
+            <div class="add-to-cart-card">
+                <h3>Order Summary</h3>
+                <div class="card-details">
+                    <p><strong>Book:</strong> Aghatit</p>
+                    <p><strong>Price:</strong> Rs. 415</p>
+                    <p><strong>Quantity:</strong> <input type="number" min="1" value="1" id="quantity" /></p>
+                    <p><strong>Total:</strong> <span id="total-price">Rs. 415</span></p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+       
+
+        </div>
+    
+        <!-- Book Details Tab -->
+        <div class="book-tabs">
+            <ul>
+                <li><a href="#description" class="active">Description</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#other-info">Other Info</a></li>
+            </ul>
+            <div id="description" class="tab-content">
+                <h2>About the Book</h2>
+                <p>Aghatit is a gripping Nepali novel by Ganesh Prasad Laath. The story revolves around...</p>
+            </div>
+            <div id="reviews" class="tab-content">
+                <h2>Reviews</h2>
+                <p>No reviews yet. Be the first to review this book!</p>
+            </div>
+            <div id="other-info" class="tab-content">
+                <h2>Other Information</h2>
+                <p>Page count: 299 pages</p>
+                <p>Weight: 235g</p>
+                <p>ISBN: 9789937712729</p>
+                <p>Sold by: <strong>Himalayan book store Nepal</strong></p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Booksmandala</h3>
+            <p>&copy; 2025 Booksmandala. All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/books">Books</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <h4>Connect With Us</h4>
+            <div class="social-icons">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin-in"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="add.js"></script>
+</body>
+</html>

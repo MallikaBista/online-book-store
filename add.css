@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* General Styling for Book Details */
+.book-details {
+    margin: 20px;
+}
+
+/* Book Content (Main Content & Add to Cart Card) */
+.book-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Book Info (Image + Description) */
+.book-info {
+    display: flex;
+    flex: 1;
+    max-width: 60%;
+    margin-right: 20px;
+    align-items: flex-start;
+}
+
+/* Book Cover Image */
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Book Description */
+.book-description {
+    margin-left: 20px;
+    margin: 2rem;
+}
+.book-description h1,
+.book-description p,
+.book-description span,
+.book-description button{
+    margin: 10px;
+}
+/* Add to Cart Card */
+.add-to-cart-card {
+    max-width: 300px;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-right: 3rem;
+}
+
+/* Add to Cart Card Heading */
+.add-to-cart-card h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* Card Details*/ 
+.card-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+#quantity {
+    width: 50px;
+    padding: 5px;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Tabs Styling */
+.book-tabs {
+    margin-top: 40px;
+    border-top: 2px solid #ccc;
+}
+
+.book-tabs ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.book-tabs li {
+    margin-right: 30px;
+}
+
+.book-tabs a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.book-tabs a.active {
+    border-bottom: 2px solid #27ae60;
+    color: #27ae60;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Stacks book info and add to cart card vertically on small screens */
+    .book-info {
+        flex-direction: column;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .add-to-cart-card {
+        width: 100%;
+    }
+}
+
+
+
+/* Footer Section Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-center h4, .footer-right h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer-right h4{
+    margin-right: 13rem;
+}
+.footer-center ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-center li {
+    margin-bottom: 8px;
+}
+
+.footer-center a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-center a:hover {
+    color: #f39c12;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #f39c12;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        margin:20px 0;
+}
+}
